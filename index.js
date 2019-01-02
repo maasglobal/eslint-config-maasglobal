@@ -171,7 +171,7 @@ module.exports = {
     ],
     "no-console": "error",
     "no-const-assign": "error",
-    "no-constant-condition": "warn",
+    "no-constant-condition": "error",
     "no-continue": "off",
     "no-control-regex": "error",
     "no-debugger": "error",
