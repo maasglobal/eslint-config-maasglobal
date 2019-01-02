@@ -1,0 +1,20 @@
+{
+  "name": "@maasglobal/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint config for MaaS projects",
+  "author": "MaaS Team",
+  "keywords": [
+    "eslint-config",
+    "eslint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maasglobal/eslint-config.git"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.14"
+  },
+  "peerDependencies": {
+    "eslint": ">=5"
+  }
+}
