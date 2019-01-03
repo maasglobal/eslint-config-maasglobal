@@ -1,0 +1,18 @@
+language: node_js
+cache:
+  directories:
+    - node_modules # Our node modules
+    - $HOME/.npm # Globally installed packages, e.g. NPM
+
+install:
+  - npm install
+  - npm update # Ensure to use latest versions of dependencies
+
+stages:
+  - name: lint
+    if: type = pull_request OR branch = master
+
+jobs:
+  include:
+    - stage: lint
+      script: npm run lint
