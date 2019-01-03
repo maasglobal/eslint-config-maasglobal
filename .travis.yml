@@ -20,6 +20,7 @@ jobs:
     - stage: lint
       script: npm run lint
     - stage: deploy
+      script: skip
       deploy:
         provider: npm
         email: tech@maas.global
