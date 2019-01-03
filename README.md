@@ -1,15 +1,15 @@
-# @maasglobal/eslint-config
+# eslint-config-maasglobal
 
 ## [ESLint](http://eslint.org/docs/developer-guide/shareable-configs) shareable config to be used across [MaaS](https://github.com/maasglobal/) projects
 
 ### Usage
 
-In `package.json` reference `@maasglobal/eslint-config` as one of `devDependencies`, and configure eslint as:
+In `package.json` reference `eslint-config-maasglobal` as one of `devDependencies`, and configure eslint as:
 
 ```json
 {
   "eslintConfig": {
-    "extends": "@maasglobal/eslint-config"
+    "extends": "maasglobal"
   }
 }
 ```

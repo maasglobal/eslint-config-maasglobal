@@ -1,5 +1,5 @@
 {
-  "name": "@maasglobal/eslint-config",
+  "name": "eslint-config-maasglobal",
   "version": "0.0.0",
   "description": "ESLint config for MaaS projects",
   "author": "MaaS Team",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/maasglobal/eslint-config.git"
+    "url": "git://github.com/maasglobal/eslint-config-maasglobal.git"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.14"
