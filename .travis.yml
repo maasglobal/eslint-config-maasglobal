@@ -13,7 +13,7 @@ stages:
   - name: lint
     if: type = pull_request OR branch = master
   - name: deploy
-    if: branch = master
+    if: branch = master AND type != pull_request
 
 jobs:
   include:
