@@ -12,8 +12,16 @@ install:
 stages:
   - name: lint
     if: type = pull_request OR branch = master
+  - name: deploy
+    if: branch = master
 
 jobs:
   include:
     - stage: lint
       script: npm run lint
+    - stage: deploy
+      deploy:
+        provider: npm
+        email: tech@maas.global
+        api_key: $NPM_TOKEN
+      after_deploy: ./scripts/tag.sh
