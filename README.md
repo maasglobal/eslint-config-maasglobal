@@ -18,4 +18,10 @@ In `package.json` reference `eslint-config-maasglobal` as one of `devDependencie
 
 For consistent whitespace formatting, an IDE should be configured to also apply [Prettier](https://prettier.io/) formatting on each file save.
 
-To ensure all eslint rules are respected, best is to rely on `eslint-prettier` plugins, which ensure that Prettier formatting is followed with `eslint --fix` run.
+Within new projects, setup `.prettierrc.js` as:
+
+```javascript
+'use strict';
+
+module.exports = require('eslint-config-maasglobal/.prettierrc');
+```
