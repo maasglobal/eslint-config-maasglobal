@@ -1,8 +1,11 @@
 {
   "name": "eslint-config-maasglobal",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ESLint config for MaaS projects",
   "author": "MaaS Team",
+  "bin": {
+    "prettier-validate": "./scripts/prettier-validate.sh"
+  },
   "keywords": [
     "eslint-config",
     "eslint"
