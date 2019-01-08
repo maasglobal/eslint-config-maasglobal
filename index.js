@@ -52,7 +52,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['**/test/**/*.js', 'gulpfile.js', 'scripts/**/*.js'],
+        devDependencies: ['**/test/**/*.js', 'gulpfile.js', '.prettierrc.js', 'scripts/**/*.js'],
       },
     ],
     'import/no-mutable-exports': 'error',
