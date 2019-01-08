@@ -4,6 +4,7 @@
   "description": "ESLint config for MaaS projects",
   "author": "MaaS Team",
   "bin": {
+    "eslint-validate": "./scripts/eslint-validate.sh",
     "prettier-validate": "./scripts/prettier-validate.sh",
     "prettify": "./scripts/prettify.sh"
   },
