@@ -15,7 +15,9 @@
     "eslint-plugin-import": "^2.14"
   },
   "devDependencies": {
-    "eslint": "^5.12.1"
+    "eslint": "^5.12.1",
+    "git-list-updated": "^1.1.2",
+    "prettier": "^1.16"
   },
   "peerDependencies": {
     "eslint": ">=5"
@@ -24,6 +26,9 @@
     "extends": "./index.js"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint --ignore-path=.gitignore .",
+    "lint-updated": "pipe-git-updated --ext=js -- eslint --ignore-pattern '!*'",
+    "prettier-check-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yml -- prettier --ignore-path .gitignore -l",
+    "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yml}'"
   }
 }
