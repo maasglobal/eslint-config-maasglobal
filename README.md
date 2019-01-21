@@ -37,7 +37,8 @@ For proper CI integration it's recommended that all MaaS projects have following
   "lint": "eslint --ignore-path=.gitignore .",
   "lint-updated": "pipe-git-updated --ext=js -- eslint --ignore-pattern '!*'",
   "prettier-check-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
-  "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yaml,yml}'"
+  "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yaml,yml}'",
+  "prettify-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier --write"
 }
 ```
 
