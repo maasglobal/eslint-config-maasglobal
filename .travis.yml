@@ -1,5 +1,5 @@
 language: node_js
-node_js: "node" # Latest stable Node.js release
+node_js: 'node' # Latest stable Node.js release
 cache:
   directories:
     - node_modules # Our node modules
