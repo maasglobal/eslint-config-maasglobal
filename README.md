@@ -16,12 +16,37 @@ In `package.json` reference `eslint-config-maasglobal` as one of `devDependencie
 
 ### Prettier integration
 
-For consistent whitespace formatting, an IDE should be configured to also apply [Prettier](https://prettier.io/) formatting on each file save.
+Note that provided eslint setup doesn't handle eventual code style formatting. This is supposed to be solely guarded by [Prettier](https://prettier.io/)
 
-Within new projects, setup `.prettierrc.js` as:
+Within new projects, ensure `prettier` as one of `devDependencies` and setup `.prettierrc.js` as:
 
 ```javascript
 'use strict';
 
 module.exports = require('eslint-config-maasglobal/.prettierrc');
 ```
+
+It's highly recommended that for consistent whitespace formatting, an IDE is configured to also apply Prettier formatting on each file save.
+
+### Scripts setup and CI integration
+
+For proper CI integration it's recommended that all MaaS project have following scripts setup:
+
+```json
+{
+  "lint": "eslint --ignore-path=.gitignore .",
+  "lint-updated": "pipe-git-updated --ext=js -- eslint --ignore-pattern '!*'",
+  "prettier-check-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yml -- prettier --ignore-path .gitignore -l",
+  "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yml}'"
+}
+```
+
+_Note: Scripts require additional `git-list-updated` dependency to be referenced in `devDependencies`_
+
+In Travis CI configuration, ensure that following validation is made on each PR build (but not on branch deployment):
+
+```bash
+npm run lint-updated && npm run prettier-check-updated
+```
+
+There's no other lint checks (either individual ESlint or JSON lint) that need to be pursued
