@@ -3,11 +3,6 @@
   "version": "1.4.1",
   "description": "ESLint config for MaaS projects",
   "author": "MaaS Team",
-  "bin": {
-    "eslint-updated": "./scripts/eslint-updated.sh",
-    "prettier-check-updated": "./scripts/prettier-check-updated.sh",
-    "prettify": "./scripts/prettify.sh"
-  },
   "keywords": [
     "eslint-config",
     "eslint"
