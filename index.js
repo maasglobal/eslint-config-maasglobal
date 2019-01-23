@@ -39,7 +39,15 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['**/test/**/*.js', 'gulpfile.js', '.prettierrc.js', 'scripts/**/*.js'],
+        devDependencies: [
+          '/**/test/**/*.js',
+          '/.prettierrc.js',
+          '/bin/test',
+          '/gulpfile.js',
+          '/jest.setupEnvironment.js',
+          '/scripts/**/*.js',
+          '/webpack.config.js',
+        ],
       },
     ],
     'import/no-mutable-exports': 'error',
