@@ -214,5 +214,5 @@ module.exports = {
     'vars-on-top': 'error',
     yoda: 'error',
   },
-  overrides: [{ files: '**/test/**', env: { mocha: true } }],
+  overrides: [{ files: ['**/test/**', 'jest.setupEnvironment.js'], env: { mocha: true, jest: true } }],
 };
