@@ -12,7 +12,8 @@
     "url": "git://github.com/maasglobal/eslint-config-maasglobal.git"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.14"
+    "eslint-plugin-import": "^2.14",
+    "eslint-plugin-jsdoc": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^5.12.1",
