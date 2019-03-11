@@ -98,7 +98,6 @@ module.exports = {
     'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
     'no-lone-blocks': 'error',
     'no-lonely-if': 'error',
-    'no-loop-func': 'error',
     'no-mixed-spaces-and-tabs': 'off', // Handled by Prettier
     'no-multi-assign': 'error',
     'no-multi-str': 'error',
