@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-maasglobal",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "ESLint config for MaaS projects",
   "author": "MaaS Team",
   "keywords": [
@@ -12,6 +12,7 @@
     "url": "git://github.com/maasglobal/eslint-config-maasglobal.git"
   },
   "dependencies": {
+    "eslint-plugin-jsdoc": "^15.3.4",
     "eslint-plugin-import": "^2.14"
   },
   "devDependencies": {
