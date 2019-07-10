@@ -7,7 +7,12 @@ module.exports = {
     node: true,
   },
   parserOptions: { ecmaVersion: 2018 },
-  plugins: ['import'],
+  plugins: ['import', 'jsdoc'],
+  settings: {
+    jsdoc: {
+      overrideReplacesDocs: false,
+    },
+  },
   rules: {
     'block-scoped-var': 'error',
     'class-methods-use-this': [
@@ -56,6 +61,23 @@ module.exports = {
     'import/no-named-default': 'error',
     'import/no-webpack-loader-syntax': 'error',
     'import/prefer-default-export': 'error',
+    'jsdoc/check-alignment': 1,
+    'jsdoc/check-examples': 1,
+    'jsdoc/check-indentation': 1,
+    'jsdoc/check-param-names': 1,
+    'jsdoc/check-syntax': 1,
+    'jsdoc/check-tag-names': 1,
+    'jsdoc/check-types': 1,
+    'jsdoc/implements-on-classes': 1,
+    'jsdoc/newline-after-description': 1,
+    'jsdoc/no-types': 0,
+    'jsdoc/no-undefined-types': 0,
+    'jsdoc/require-description': 1,
+    'jsdoc/require-hyphen-before-param-description': 1,
+    'jsdoc/require-jsdoc': 1,
+    'jsdoc/require-param-name': 1,
+    'jsdoc/require-param': 1,
+    'jsdoc/require-returns-type': 1,
     'linebreak-style': ['error', 'unix'],
     'lines-around-directive': [
       'error',
