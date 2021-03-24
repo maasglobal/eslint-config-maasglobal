@@ -3,10 +3,10 @@
 module.exports = {
   extends: 'eslint:recommended',
   env: {
-    es6: true, // Register ES2015 globals
+    es2020: true, // Register ES2020 globals
     node: true,
   },
-  parserOptions: { ecmaVersion: 2020 },
+  parserOptions: { ecmaVersion: 11 },
   plugins: ['import', 'jsdoc'],
   settings: {
     jsdoc: {
