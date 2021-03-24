@@ -6,7 +6,7 @@ module.exports = {
     es6: true, // Register ES2015 globals
     node: true,
   },
-  parserOptions: { ecmaVersion: 2018 },
+  parserOptions: { ecmaVersion: 2020 },
   plugins: ['import', 'jsdoc'],
   settings: {
     jsdoc: {
