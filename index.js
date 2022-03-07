@@ -5,6 +5,7 @@ module.exports = {
   env: {
     es6: true, // Register ES2015 globals
     node: true,
+    jest: true,
   },
   parserOptions: { ecmaVersion: 2018 },
   plugins: ['import'],
@@ -40,6 +41,7 @@ module.exports = {
       'error',
       {
         devDependencies: [
+          '**/*.test.js',
           '/**/test/**/*.js',
           '/.prettierrc.js',
           '/bin/test',
@@ -214,5 +216,5 @@ module.exports = {
     'vars-on-top': 'error',
     yoda: 'error',
   },
-  overrides: [{ files: ['**/test/**', 'jest.setupEnvironment.js'], env: { mocha: true, jest: true } }],
+  overrides: [{ files: ['**/test/**', '**/*.test.js', 'jest.setupEnvironment.js'], env: { mocha: true, jest: true } }],
 };
