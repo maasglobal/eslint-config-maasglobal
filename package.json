@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-maasglobal",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "ESLint config for MaaS projects",
   "author": "MaaS Team",
   "keywords": [
