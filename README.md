@@ -4,7 +4,7 @@
 
 ### Usage
 
-In `package.json` reference `eslint-config-maasglobal` and `eslint-plugin-import` as one of `devDependencies`, and configure eslint as:
+In `package.json` reference `eslint-config-maasglobal`, `eslint-plugin-import`, `eslint-plugin-jsdoc` as one of `devDependencies`, and configure eslint as:
 
 ```json
 {

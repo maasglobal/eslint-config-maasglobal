@@ -3,12 +3,17 @@
 module.exports = {
   extends: 'eslint:recommended',
   env: {
-    es6: true, // Register ES2015 globals
+    es2020: true, // Register ES2020 globals
     node: true,
     jest: true,
   },
-  parserOptions: { ecmaVersion: 2018 },
-  plugins: ['import'],
+  parserOptions: { ecmaVersion: 11 },
+  plugins: ['import', 'jsdoc'],
+  settings: {
+    jsdoc: {
+      overrideReplacesDocs: false,
+    },
+  },
   rules: {
     'block-scoped-var': 'error',
     'class-methods-use-this': [
@@ -58,6 +63,23 @@ module.exports = {
     'import/no-named-default': 'error',
     'import/no-webpack-loader-syntax': 'error',
     'import/prefer-default-export': 'error',
+    'jsdoc/check-alignment': 1,
+    'jsdoc/check-examples': 1,
+    'jsdoc/check-indentation': 1,
+    'jsdoc/check-param-names': 1,
+    'jsdoc/check-syntax': 1,
+    'jsdoc/check-tag-names': 1,
+    'jsdoc/check-types': 1,
+    'jsdoc/implements-on-classes': 1,
+    'jsdoc/newline-after-description': 1,
+    'jsdoc/no-types': 0,
+    'jsdoc/no-undefined-types': 0,
+    'jsdoc/require-description': 1,
+    'jsdoc/require-hyphen-before-param-description': 1,
+    'jsdoc/require-jsdoc': 1,
+    'jsdoc/require-param-name': 1,
+    'jsdoc/require-param': 1,
+    'jsdoc/require-returns-type': 1,
     'linebreak-style': ['error', 'unix'],
     'lines-around-directive': [
       'error',
@@ -100,7 +122,6 @@ module.exports = {
     'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
     'no-lone-blocks': 'error',
     'no-lonely-if': 'error',
-    'no-loop-func': 'error',
     'no-mixed-spaces-and-tabs': 'off', // Handled by Prettier
     'no-multi-assign': 'error',
     'no-multi-str': 'error',
