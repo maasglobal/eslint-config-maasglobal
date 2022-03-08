@@ -18,8 +18,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
       - run: npm run lint
-      - run: npm run prettier
-      - run: npm test
+      - run: npm run prettify
   publish:
     if: ${{ github.event_name != 'pull_request' }}
     needs: ['test']
