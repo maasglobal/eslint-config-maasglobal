@@ -5,6 +5,7 @@ module.exports = {
   env: {
     es2020: true, // Register ES2020 globals
     node: true,
+    jest: true,
   },
   parserOptions: { ecmaVersion: 11 },
   plugins: ['import', 'jsdoc'],
@@ -45,6 +46,7 @@ module.exports = {
       'error',
       {
         devDependencies: [
+          '**/*.test.js',
           '/**/test/**/*.js',
           '/.prettierrc.js',
           '/bin/test',
@@ -235,5 +237,5 @@ module.exports = {
     'vars-on-top': 'error',
     yoda: 'error',
   },
-  overrides: [{ files: ['**/test/**', 'jest.setupEnvironment.js'], env: { mocha: true, jest: true } }],
+  overrides: [{ files: ['**/test/**', '**/*.test.js', 'jest.setupEnvironment.js'], env: { mocha: true, jest: true } }],
 };
