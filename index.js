@@ -121,7 +121,7 @@ module.exports = {
     'jsdoc/require-jsdoc': 1,
     'jsdoc/require-param': 1,
     'jsdoc/require-param-name': 1,
-    'jsdoc/require-returns-type': 1,
+    'jsdoc/require-returns-type': 0,
     'linebreak-style': ['error', 'unix'],
     'lines-around-directive': [
       'error',
