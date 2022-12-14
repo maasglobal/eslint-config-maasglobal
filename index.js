@@ -306,7 +306,7 @@ module.exports = {
       },
     ],
     'prefer-spread': 'error',
-    'simple-import-sort/sort': [
+    'simple-import-sort/imports': [
       1,
       {
         groups: [['^\\u0000'], ['^[^.]'], ['^\\.']],
