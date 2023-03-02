@@ -1,6 +1,8 @@
 # eslint-config-maasglobal
 
-## [ESLint](http://eslint.org/docs/developer-guide/shareable-configs) shareable config to be used across [MaaS](https://github.com/maasglobal/) projects
+**DEPRECATED**
+
+This eslint config was used for old JavaScript based [MaaS Global](https://github.com/maasglobal/) projects. The focus of development has since moved to TypeScript. The config available in this package has been deprecated as a result. Please migrate to [eslint-config-maasglobal-ts](https://www.npmjs.com/package/eslint-config-maasglobal-ts) that is used for all new MaaS Global projects.
 
 ### Usage
 
