@@ -113,7 +113,6 @@ module.exports = {
     'jsdoc/check-tag-names': 1,
     'jsdoc/check-types': 1,
     'jsdoc/implements-on-classes': 1,
-    'jsdoc/newline-after-description': 1,
     'jsdoc/no-types': 1,
     'jsdoc/no-undefined-types': 0,
     'jsdoc/require-description': 1,
